@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
+    <script src="js/weather.js"></script>
+    <title>Local Weather Viewer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,12 +70,12 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+                <h1>Weather Viewer</h1>
+                  <p id="cityName">City Name:  </p>
+                  <p id="tempF">Temp in F: </p>
+                  <p id="tempC">Temp in C: </p>
+                  <p id="weatherType">The weather today is: </p>
+                  <button onclick="getWeather()">Get Weather!</button>
             </div>
         </div>
         <!-- /.row -->
