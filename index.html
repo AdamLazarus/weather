@@ -8,11 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/weather.js"></script>
     <title>Local Weather Viewer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
@@ -44,20 +48,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">Local Weather</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,11 +66,9 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Weather Viewer</h1>
-                  <p id="cityName">City Name:  </p>
-                  <p id="tempF">Temp in F: </p>
-                  <p id="tempC">Temp in C: </p>
-                  <p id="weatherType">The weather today is: </p>
-                  <button onclick="getWeather()">Get Weather!</button>
+                  <h4 id="cityName">Your Location:  </h4>
+                  <h4 id="tempC">Temperature in C: </h4>
+                  <p id="weatherType">The weather today is: <span class="weather-icon" data-icon=""/></p>
             </div>
         </div>
         <!-- /.row -->
@@ -83,11 +76,7 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
